@@ -2,6 +2,8 @@ let box = document.querySelectorAll(".box");
 let restart = document.querySelector(".restart");
 
 let switcher = false;
+let playerX = [];
+let PlayerO = [];
 
 let handleClick = (e) => {
 	switcher = !switcher;
