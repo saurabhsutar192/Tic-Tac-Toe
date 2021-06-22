@@ -1,82 +1,101 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .ttt {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .title {
-	font-size: 10vh;
-	font-weight: 500;
-	margin-bottom: 20px;
+  font-size: 10vh;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .tac {
-	color: rgb(255, 136, 0);
+  color: rgb(255, 136, 0);
 }
 
 .container {
-	height: 65vh;
-	width: 65vh;
+  height: 65vh;
+  width: 65vh;
 
-	display: grid;
-	grid-template-columns: repeat(3, 33.33%);
-	grid-template-rows: repeat(3, 33.33%);
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(3, 33.33%);
 }
 
 .box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 10vh;
-	font-weight: 800;
-	color: rgb(255, 136, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vh;
+  font-weight: 800;
+  color: rgb(255, 136, 0);
 }
 
 .b2 {
-	border: 3px solid black;
+  border: 3px solid black;
 }
 
 .a2,
 .c2 {
-	border-inline: 3px solid black;
+  border-inline: 3px solid black;
 }
 
 .b1,
 .b3 {
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerX,
+.playerO {
+  width: 30%;
+  padding-inline: 20px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.playerO {
+  text-align: end;
 }
 
 .restart {
-	border: 2px solid black;
-	margin-top: 10px;
-	padding: 10px;
-	font-weight: 800;
-	cursor: pointer;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .restart:hover {
-	background: black;
-	color: white;
+  background: black;
+  color: white;
 }
 
 @media (orientation: portrait) {
-	.container {
-		height: 70vw;
-		width: 70vw;
-	}
-	.title {
-		font-size: 12vw;
-	}
+  .container {
+    height: 70vw;
+    width: 70vw;
+  }
+  .title {
+    font-size: 12vw;
+  }
 }
