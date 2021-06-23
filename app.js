@@ -124,6 +124,7 @@ let playerX_wins = () => {
     location.reload();
   } else if (pO.length === 10) {
     window.alert("O wins the Match");
+    location.reload();
   }
 };
 
@@ -139,6 +140,7 @@ let playerO_wins = () => {
     location.reload();
   } else if (pO.length === 10) {
     window.alert("O wins the Match");
+    location.reload();
   }
 };
 
